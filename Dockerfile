@@ -10,6 +10,4 @@ COPY index.html /var/www/html
 
 EXPOSE 80
 
-ENTRYPOINT [ "/usr/sbin/Apache2"]
-
-CMD ["-D", "FOREGROUND"]
+CMD ["apachectl", "-D", "FOREGROUND"]
