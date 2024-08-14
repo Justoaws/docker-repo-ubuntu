@@ -4,7 +4,7 @@ LABEL description="here our Dockerfile for ubuntu server"
 LABEL maintainer="Justin Mebodo"
 
 RUN apt-get -y update
-RUN apt-get -y install httpd
+RUN apt-get -y install Apache2
 
 COPY index.html /var/www/html
 
